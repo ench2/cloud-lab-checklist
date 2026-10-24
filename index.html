@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="��ѵ�������ʵ��׼������Դ�ͷż���嵥�������¼�����������˻���">
+  <title>���� �� ��ʵ�����嵥</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="./">���� <span>LAB CHECKLIST</span></a><span class="pill">���߿��� �� �����¼</span></header>
+    <section class="hero"><p class="eyebrow">��ȷ�ϣ��ٿ�ʼ</p><h1>���Ŀ�ʼ���<br><em>��һ����ʵ�顣</em></h1><p class="intro">���˺Ÿ��롢����ȷ�Ϻ���Դ�ͷű�������Ĳ��衣��¼���ڵ�ǰ�����������ȡ������������˻���</p></section>
+    <div class="workspace">
+      <aside><label for="lab-name">����ʵ�����ƣ�ѡ�</label><input id="lab-name" maxlength="80" placeholder="���磺Linux ������ϰ"><div class="progress-head"><strong id="count">0 / 12 ��</strong><span id="percent">0%</span></div><progress id="progress" max="12" value="0" aria-label="�嵥����"></progress><p id="status" role="status" aria-live="polite">�Ⱥ˶�׼���嵥���ٽ���ʵ�顣</p><div class="note"><strong>���ò���ȷ������ͣ��</strong><p>ʵ���ע����ѡ���һ�����Ƕ�����Դ�������߲��ж�ʵ���˵���Ҳ����������ֹͣ��ɾ���κ�����Դ��</p></div><button id="export" class="primary">���������嵥</button><button id="reset" class="secondary">��ձ��ؼ�¼</button><p id="storage-status" class="small">��ѡ����Զ������ڱ����������</p></aside>
+      <div id="checklist" class="checklist"></div>
+    </div>
+    <footer><p>�����Բ��¼��������ƽ̨������ɡ���֤ͨ������Դ���ͷš���Ҫ��ʵ�������������˺š����롢��Կ�������Ϣ��</p><p>�ο���<a href="https://edu.huaweicloud.com/lab/" target="_blank" rel="noopener noreferrer">KooLabs ��ʵ��</a> �� <a href="https://support.huaweicloud.com/" target="_blank" rel="noopener noreferrer">��Ϊ�ư�������</a>�������������ѡʵ��Ϳ���̨��ǰ˵��Ϊ׼��</p><p>AI �������� �� �޵��������� �� �޷���׷��</p></footer>
+  </main>
+  <dialog id="reset-dialog"><h2>�������嵥��</h2><p>ֻ��������ߵ�ʵ�����ƺ͹�ѡ��¼������Ӱ�����˻�����Դ��</p><div class="dialog-actions"><button id="cancel-reset" class="secondary">������¼</button><button id="confirm-reset" class="primary">ȷ�����</button></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
